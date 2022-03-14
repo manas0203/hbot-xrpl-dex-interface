@@ -11,12 +11,7 @@ const expressWinston = require('express-winston');
 
 // routes
 import apiRoutes from './routes/index.route';
-import balancerRoutes from './routes/balancer.route';
-import ethRoutes from './routes/ethereum';
-import perpFiRoutes from './routes/perpetual_finance.route';
-import terraRoutes from './routes/terra';
-import uniswapRoutes from './routes/uniswap';
-import uniswapV3Routes from './routes/uniswap_v3';
+import xrplRoutes from './routes/xrpl';
 
 // load configs
 const globalConfig =
@@ -59,12 +54,8 @@ app.use(
 
 // mount routes to specific path
 app.use('/api', apiRoutes);
-app.use('/eth', ethRoutes);
-app.use('/eth/uniswap', uniswapRoutes);
-app.use('/eth/uniswap/v3', uniswapV3Routes);
-app.use('/eth/balancer', balancerRoutes);
-app.use('/terra', terraRoutes);
-app.use('/perpfi', perpFiRoutes);
+app.use('/xrpl', xrplRoutes);
+
 
 // a simple, pingable route
 app.get('/', (_req, res) => {

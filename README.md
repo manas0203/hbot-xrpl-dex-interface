@@ -11,6 +11,10 @@
 - Follow this guide to setup gateway: https://docs.hummingbot.org/developers/gateway/setup/
 - For adding XRPL wallet, use the following section `Add Wallet`
 
+## Dependencies
+- pip install jsonpickle
+- mkdir -p hbot-xrpl-dex-interface/logs
+
 ## Add Wallet
 - Run Gateway
 - Run Hummingbot

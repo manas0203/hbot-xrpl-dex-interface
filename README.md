@@ -1,5 +1,5 @@
 ## Download
-- Clone the HB repo at branch `feat/xrpl-dex-gateway` : https://github.com/manas0203/hbot-xrpl-dex-interface/tree/main/gateway
+- Clone the HB repo at branch `master` : https://github.com/manas0203/hbot-xrpl-dex-interface
 
 ## Environment
 - Python 3.8.2
